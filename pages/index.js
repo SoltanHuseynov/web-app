@@ -60,7 +60,7 @@ const closeNav=()=>{
 
 
 Blog_Home.getInitialProps=async({req})=>{
-    const res= await fetch("https://soltan-blog.herokuapp.com/api/posts")
+    const res= await fetch("https://soltanhuseynov.herokuapp.com/api/posts")
     const json= await res.json()
     //console.log(json)
     return{
