@@ -1,0 +1,40 @@
+.one_social{
+  text-align: center;
+  margin: auto;
+}
+.img:hover{
+  transition: .1s;
+  background-color: white;
+  border-radius: 50%;
+}
+.img2{
+  border-radius: 45%;
+}
+.img2:hover{
+  background-color: white;
+  border-radius: 50%;
+}
+.logo{
+  text-align: center;
+}
+.logo2 {
+  margin-top:20px ;
+  width: 200px;
+  background-color: white;
+  border-radius:50%;
+  border:2.5px solid #8D07F6;
+}
+.logo2:hover{
+  background-color:#D4DBF5;
+}
+.text{
+  font-size: 24px;
+  text-align: center;
+}
+.link{
+  color: #69607F;
+}
+.link:hover{
+  color:#8D07F6;
+  text-decoration: underline;
+}

@@ -1,0 +1,91 @@
+html,
+*{
+    margin: auto;
+    transition: .1s;
+}
+.social{
+    background-color: black;
+    text-align: center;
+}
+.s1 img{
+    margin:90px 20px 10px ; 
+    text-decoration: none;
+    transition: 0.1s;
+    border-radius: 35%;
+    padding: 15px 15px 15px 15px ;
+}
+.s2{
+    background-color:black;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    right: 0;
+    transition: 0.1s;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+.sidebar img{
+    text-decoration: none;
+    transition: 0.3s;
+    margin:auto;
+    padding: 15px 15px 15px 15px;
+    margin-bottom:10% ;
+    display: block;
+}
+.open2{
+    display: none;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: right;
+    color:white;
+    padding: 0px 20px 0px 0px;
+}
+
+.open2:hover {
+    transition: .2s;
+    color:silver;
+    
+}
+
+@media screen and (max-width: 451px){
+    .s1 img {
+        display: none;
+    }
+    .open2{
+        display:block;
+    }
+}
+.text{
+    font-family: 'Saira Extra Condensed';
+    font-weight: bold;
+    text-transform: uppercase;  
+     
+}
+.blog_name{
+    font-size: 6pc;
+}
+.blog_last_name{
+    color:#69607F;
+}
+
+
+@media screen and (max-width:540px){
+    .blog_name{
+        font-size: 4pc;
+    }
+    @media screen and (max-width:355px) {
+        .blog_name{
+            font-size: 3.5pc;
+        
+        }
+    }
+}
+
+/*-----*/
