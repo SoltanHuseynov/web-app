@@ -8,7 +8,7 @@ const Blog_Home=({log,con,network})=>(
   
     <html>
         <Head>
-            <title>Soltan H</title>
+            <title>mr.soltan</title>
             <meta charSet="utf-8"></meta>
             <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
             <link href='https://fonts.googleapis.com/css?family=Saira Extra Condensed' rel='stylesheet'></link>
@@ -62,7 +62,6 @@ const closeNav=()=>{
 Blog_Home.getInitialProps=async({req})=>{
     const res= await fetch("https://soltanhuseynov.herokuapp.com/api/posts")
     const json= await res.json()
-    //console.log(json)
     return{
         log:[json.status,json.logo_.img],
         con:[json.contact.gmail,json.contact.discord],
@@ -75,24 +74,4 @@ Blog_Home.getInitialProps=async({req})=>{
 
     }
 }
-/*
-export async function getStaticProps(){
-    const Data_get=await fetch("http://localhost:3000/api/posts")
-    const jsonGet=await Data_get.json()
-    return{
-        props:{
-            blogStatus:jsonGet.Status,
-            blogGmail:jsonGet.Gmail,
-            blogDiscord:jsonGet.Discord,
-            //social
-            blogInsta:jsonGet.Instagram,
-            blogLinke:jsonGet.Linked,
-            blogGit:jsonGet.Github,
-            blogTwit:jsonGet.Twitter
-
-        }
-    }
-
-}
-*/
 export default Blog_Home

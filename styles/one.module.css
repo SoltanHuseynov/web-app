@@ -19,13 +19,14 @@
 }
 .logo2 {
   margin-top:20px ;
-  width: 200px;
+  max-width: 12rem;
+  max-height: 12rem;
   background-color: white;
-  border-radius:50%;
-  border:2.5px solid #8D07F6;
+  border-radius: 50%;
+  border:2.5px solid white;
 }
 .logo2:hover{
-  background-color:#D4DBF5;
+  border:2.5px solid #8D07F6;;
 }
 .text{
   font-size: 24px;
